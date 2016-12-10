@@ -1,0 +1,9 @@
+<% if user_signed_in? && current_user.watches?(item) %>
+	<%= link_to "UnWatch", item_watch_path(item), method: :delete, remote: true%>
+<% else %>
+	<%= link_to "WatchList", item_watch_path(item), method: :post, remote: true%>
+	<% end %>
+	
+<% item.watches.each do |watch| %>
+	<%= image_tag watch.user.avatar, width: 20%>
+<% end %>
