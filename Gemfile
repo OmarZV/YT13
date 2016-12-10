@@ -16,6 +16,10 @@ gem 'devise', '~> 4.2'
 gem 'omniauth-facebook', '~> 4.0'
 gem 'paperclip', '~> 5.1'
 gem 'redis'
+gem "font-awesome-rails"
+gem 'chosen-rails'
+gem 'devise-bootstrap-views', '~> 0.0.9'
+
 
 
 
